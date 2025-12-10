@@ -1,0 +1,409 @@
+/* --- 1. Global Reset & Typography --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+h1, h2, h3, h4 {
+    color: #002147; /* Deep Navy Blue */
+    margin-top: 0;
+}
+
+/* --- 2. Header & Navigation --- */
+header {
+    background-color: #3b1c65; /* Deep Navy Blue */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 6;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+nav ul a:hover, nav ul a.active {
+    color: #007BFF; /* Sky Blue */
+    border-bottom: 3px solid #007BFF;
+}
+
+/* --- 3. Call to Action Buttons (CTAs) --- */
+.cta-button, #button {
+    display: inline-block;
+    background-color: #007BFF; /* Sky Blue */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; 
+}
+
+.secondary-cta {
+    background-color: #002147; /* Deep Navy Blue */
+}
+
+.secondary-cta:hover {
+    background-color: #007BFF; /* Sky Blue */
+}
+
+/* --- 4. Shared Section Styles --- */
+section {
+    padding: 60px 0;
+}
+
+.page-header {
+    background-color: #f0f0f5; /* Light Gray */
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: #002147;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.odd-section {
+    background-color: #f4f7f9; /* Light Blue-Gray */
+}
+
+.even-section {
+    background-color: #ffffff;
+}
+
+.cta-banner {
+    background-color: #002147; /* Deep Navy Blue */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* --- 5. Footer --- */
+footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    padding: 20px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    color: #007BFF; /* Sky Blue */
+}
+
+/* --- 6. Home Page Specific Styles --- */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f3f2f4;
+    background-image: url("india.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #000305; /* Sky Blue */
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pillar-item {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pillar-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-item .icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+    color: #28A745; /* Safety Green */
+}
+
+/* --- 7. How It Works Specific Styles --- */
+.system-flow {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.dive-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dive-content h2 {
+    font-size: 2em;
+    color: #3c68b9; /* Sky Blue */
+    border-bottom: 3px solid #002147;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.feature-detail {
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-left: 5px solid #28A745; /* Safety Green */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.feature-detail h4 {
+    color: #002147;
+    margin-bottom: 5px;
+}
+
+.incident-response {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+}
+
+.incident-response h2 {
+    color: white;
+}
+
+/* --- 8. Features Page Specific Styles --- */
+.feature-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stakeholder-section {
+    padding: 40px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h4 {
+    color: #007BFF;
+    font-size: 1.3em;
+}
+
+/* --- 9. Security Page Specific Styles --- */
+.security-pillar h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #002147;
+}
+
+.security-content-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.security-content-grid.reverse-order {
+    flex-direction: row-reverse;
+}
+
+.security-text, .security-image {
+    flex: 1;
+}
+
+.security-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.security-text ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="%2328A745" d="M9 16.2l-3.5-3.5l1.4-1.4l2.1 2.1l4.9-4.9l1.4 1.4l-6.3 6.3z"/></svg>') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.compliance-details {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.detail-box {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.detail-box h4 {
+    color: #007BFF;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* --- 10. Case Studies Specific Styles --- */
+.case-study-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.case-header {
+    background-color: #592879;
+    color: white;
+    padding: 20px 40px;
+}
+
+.case-header h3 {
+    color: white;
+    margin: 0;
+}
+
+.case-body {
+    padding: 40px;
+}
+
+.result-box {
+    background-color: #28A745;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.case-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.case-body ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%23007BFF" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>') no-repeat left center;
+    background-size: 15px 15px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+/* --- 11. Contact Page Specific Styles --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    background-color: #002147;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    color: white;
+    border-bottom: 1px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
